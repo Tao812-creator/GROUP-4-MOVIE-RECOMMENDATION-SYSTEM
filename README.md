@@ -1,10 +1,25 @@
 # Group 4: Movie Recommendation System
 
 A movie recommender built on the MovieLens "small" dataset. Given a user's ratings of other movies, it returns **5 movies the user has not seen and is likely to rate highly**.
+1. Problem Statement
+Background
 
-## 1. Business Problem
+Streaming platforms offer thousands of titles, but users can only browse a small fraction of them. When viewers cannot quickly find something they like, they spend less time on the platform, rate fewer titles, and are more likely to cancel their subscription. Personalised recommendations are one of the main ways platforms reduce this discovery problem.
 
-Streaming platforms host thousands of titles, and users struggle to find something worth watching. Poor discovery lowers engagement and increases churn. This project helps a streaming service show each user a short, personalised list of 5 unseen movies.
+Problem
+
+A streaming service wants to show each user a short list of movies they are likely to enjoy, using only what the user has already told the platform through their ratings. The data is highly sparse: each user has rated only a tiny share of the roughly 9,700 movies available. The model must estimate how a user would rate movies they have never seen, then pick the best five.
+
+Objective
+
+Build a recommendation system that, given a user's ratings of other movies, returns the top 5 movies the user has not yet seen and is most likely to rate highly.
+
+Specific objectives
+Explore the MovieLens data and identify features that affect modelling (sparsity, rating skew, uneven movie popularity).
+Build collaborative filtering models (item-based similarity and SVD) to predict user ratings.
+Evaluate the models with RMSE and MAE against a simple baseline, and justify the metrics.
+Address the cold-start problem for new users and new movies with popularity and content-based filtering.
+Deliver a function, recommend_top5(user_ratings), that returns five movie titles.
 
 **How a user provides ratings:** as a Python dictionary of movie title and rating, for example:
 
