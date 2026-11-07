@@ -15,11 +15,12 @@ A streaming service wants to show each user a short list of movies they are like
 Build a recommendation system that, given a user's ratings of other movies, returns the top 5 movies the user has not yet seen and is most likely to rate highly.
 
 Specific objectives
-Explore the MovieLens data and identify features that affect modelling (sparsity, rating skew, uneven movie popularity).
-Build collaborative filtering models (item-based similarity and SVD) to predict user ratings.
-Evaluate the models with RMSE and MAE against a simple baseline, and justify the metrics.
-Address the cold-start problem for new users and new movies with popularity and content-based filtering.
-Deliver a function, recommend_top5(user_ratings), that returns five movie titles.
+
+-Explore the MovieLens data and identify features that affect modelling (sparsity, rating skew, uneven movie popularity).
+-Build collaborative filtering models (item-based similarity and SVD) to predict user ratings.
+-Evaluate the models with RMSE and MAE against a simple baseline, and justify the metrics.
+-Address the cold-start problem for new users and new movies with popularity and content-based filtering.
+-Deliver a function, recommend_top5(user_ratings), that returns five movie titles.
 
 **How a user provides ratings:** as a Python dictionary of movie title and rating, for example:
 
