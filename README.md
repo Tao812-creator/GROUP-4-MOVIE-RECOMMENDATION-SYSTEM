@@ -2,15 +2,15 @@
 
 A movie recommender built on the MovieLens "small" dataset. Given a user's ratings of other movies, it returns **5 movies the user has not seen and is likely to rate highly**.
 1. Problem Statement
-Background
+### Background
 
 Streaming platforms offer thousands of titles, but users can only browse a small fraction of them. When viewers cannot quickly find something they like, they spend less time on the platform, rate fewer titles, and are more likely to cancel their subscription. Personalised recommendations are one of the main ways platforms reduce this discovery problem.
 
-Problem
+### Problem
 
 A streaming service wants to show each user a short list of movies they are likely to enjoy, using only what the user has already told the platform through their ratings. The data is highly sparse: each user has rated only a tiny share of the roughly 9,700 movies available. The model must estimate how a user would rate movies they have never seen, then pick the best five.
 
-Objective
+### Objective
 
 Build a recommendation system that, given a user's ratings of other movies, returns the top 5 movies the user has not yet seen and is most likely to rate highly.
 
